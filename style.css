@@ -1,0 +1,108 @@
+/* Reset styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* Container for city name and time */
+.nameAndtime {
+    margin: 10px;
+}
+
+/* City name */
+#city-name {
+    font-size: 6vw;
+    /* Responsive font size */
+    font-weight: 400;
+}
+
+/* Date and time */
+#date-time {
+    font-size: 2vw;
+    /* Responsive font size */
+    font-weight: 300;
+}
+
+/* Individual time cards */
+.card {
+    background-color: #9b6d52;
+    width: 13%;
+    /* Width as a percentage of the viewport width */
+    height: 80%;
+    margin: 0 1%;
+    /* Add margin between cards */
+}
+
+/* Header within card */
+.header {
+    color: black;
+    width: 100%;
+    background-color: #d4cac4;
+}
+
+/* Header text within card */
+.header h1 {
+    padding: 5px;
+    font-size: 1.5vw;
+    /* Responsive font size */
+}
+
+/* Body of card */
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Time text within card */
+.body h1 {
+    padding-top: 20%;
+    /* Adjust vertical spacing */
+    font-weight: 600;
+    font-size: 3vw;
+    /* Responsive font size */
+}
+
+/* Select menu */
+#selectMenu {
+    width: 15%;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 2vw;
+    /* Responsive font size */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 30%;
+        /* Adjust card width for smaller screens */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    #city-name {
+        font-size: 10vw;
+    }
+
+    #date-time {
+        font-size: 4vw;
+    }
+
+    .header h1,
+    .body h1,
+    #selectMenu {
+        font-size: 4vw;
+    }
+}
